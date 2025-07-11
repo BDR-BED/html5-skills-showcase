@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Full HTML5 feature showcase" />
+  <title>HTML5</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 skills showcase</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#semantics">Semantics</a></li>
+        <li><a href="#interactive">Interactive</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="forms">
+      <h2>🧾 Forms & Input Types</h2>
+      <form autocomplete="on">
+        <label>
+          Name:
+          <input type="text" name="name" required autofocus />
+        </label><br />
+
+        <label>
+          Email:
+          <input type="email" name="email" />
+        </label><br />
+
+        <label>
+          Date of Birth:
+          <input type="date" name="dob" />
+        </label><br />
+
+        <label>
+          Color:
+          <input type="color" name="favcolor" />
+        </label><br />
+
+        <label>
+          Range:
+          <input type="range" min="1" max="10" />
+        </label><br />
+
+        <label>
+          Search:
+          <input type="search" name="query" />
+        </label><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+
+    <section id="media">
+      <h2>🎞️ Media Elements</h2>
+
+      <figure>
+        <img src="image.jpg" alt="Example image" loading="lazy" />
+        <figcaption>Lazy-loaded image</figcaption>
+      </figure>
+
+      <picture>
+        <source srcset="image.webp" type="image/webp" />
+        <img src="image.jpg" alt="Fallback image" />
+      </picture>
+
+      <video controls width="320">
+        <source src="video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg" />
+        Your browser does not support the audio tag.
+      </audio>
+    </section>
+
+    <section id="semantics">
+      <h2>🔤 Semantic Structure</h2>
+
+      <article>
+        <h3>Article Title</h3>
+        <p>This is a sample article element.</p>
+      </article>
+
+      <aside>
+        <p>This is an aside — supplementary info.</p>
+      </aside>
+
+      <table>
+        <caption>Sample Table</caption>
+        <thead>
+          <tr>
+            <th>Language</th>
+            <th>Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>7+ years</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>7+ years</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="interactive">
+      <h2>💡 Interactive & Modern Elements</h2>
+
+      <details>
+        <summary>Click to expand</summary>
+        <p>This is hidden content revealed on demand.</p>
+      </details>
+
+      <dialog id="exampleDialog">
+        <p>This is a dialog box</p>
+        <button onclick="document.getElementById('exampleDialog').close()">Close</button>
+      </dialog>
+      <button onclick="document.getElementById('exampleDialog').showModal()">Open Dialog</button>
+
+      <template id="card-template">
+        <div class="card">
+          <h4>Template Card</h4>
+          <p>This was rendered using a template!</p>
+        </div>
+      </template>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Boiko Danylo</p>
+    <address>
+      Contact me at <a href="mailto:bojkivdanulo@gmail.com">bojkivdanulo@gmail.com</a>
+    </address>
+  </footer>
+
+</body>
+</html>
