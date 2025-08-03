@@ -35,3 +35,9 @@ This project is a clean and modern HTML5 document that demonstrates the most imp
    ```bash
    git clone https://github.com/BDR-BED/html5-skills-showcase.git
    cd html5-feature-showcase
+---
+
+## ✍️ Author
+Created by **Boiko Danulo**  
+
+---
